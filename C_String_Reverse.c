@@ -6,13 +6,9 @@ void Reverse(char s[],unsigned int len)
 {
 
     for(int i = 0, j = len - 1; i < j; ++i, --j) {
-
         char c = s[i];
-
         s[i] = s[j];
-
         s[j] = c;
-
     }
 
 }
@@ -38,6 +34,6 @@ int main(void) {
     printf("%s,lenth = %ld\r\n",message,strlen(message));
     
     //Reverse(message,strlen(message));
-	printf("%s,lenth = %ld\r\n",resver(message,strlen(message)),strlen(message));
-	return 0;
+    printf("%s,lenth = %ld\r\n",resver(message,strlen(message)),strlen(message));
+    return 0;
 }
